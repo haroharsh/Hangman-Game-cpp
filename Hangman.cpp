@@ -8,7 +8,6 @@ using namespace std;
 
 class HangmanGame{
     public:
-    
     void playGame(){
         bool playAgain = true;
         while(playAgain){
@@ -101,6 +100,14 @@ class HangmanGame{
                 cout<<endl<<"Congratulations! You guessed the word: "<<selectedWord<<endl;
             } else {
                 cout<<endl<<"OOPS!! Out of lives! The word was: "<<selectedWord<<endl;
+                cout<<"You are hanged :) "<<endl;
+                cout << "            _____" << endl;
+                cout << "           |     |" << endl;
+                cout << "           |     O" << endl;
+                cout << "           |    /|\\" << endl;
+                cout << "           |    / \\" << endl;
+                cout << "           |" << endl;
+                cout << "           |" << endl;
             }
             
             char option;
@@ -110,7 +117,7 @@ class HangmanGame{
                 playAgain = true;
             } else {
                 playAgain = false;
-                cout<<endl<<"👋 Thanks for playing Hangman! Goodbye!"<<endl;
+                cout<<endl<<"Thanks for playing Hangman! Goodbye!"<<endl;
             }
         }
     }
