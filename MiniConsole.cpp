@@ -282,7 +282,10 @@ public:
     }
 
     void play(){
-        cout << "------ TIC-TAC-TOE ------\n1) Two Player\n2) vs Computer\nChoose mode: ";
+        cout << "------ TIC-TAC-TOE ------"<<endl;
+        cout<<"1) Two Player"<<endl;
+        cout<<"2) vs Computer"<<endl;
+        cout<<"Choose mode: "<<endl;
         int mode;
         if(!(cin >> mode) || (mode!=1 && mode!=2)){ 
             cout << "Invalid. Returning.\n"; 
